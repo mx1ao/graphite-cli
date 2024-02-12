@@ -45,7 +45,7 @@ export async function createBranchAction(
     context.splog.info(`No staged changes; created a branch with no commit.`);
   }
 
-  // The reason we get the list of siblings here instead of having all
+  // The  reason we get the list of siblings here instead of having all
   // the `--insert` logic in a separate function is so that we only
   // show the tip if the user creates a branch with siblings.
 
