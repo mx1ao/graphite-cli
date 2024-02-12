@@ -94,6 +94,8 @@ async function requestServerToSubmitPRs({
   trunkBranchName: string;
   context: TContext;
 }): Promise<TSubmittedPR[]> {
+  // eslint-disable-next-line no-console
+  console.log(submissionInfo);
   const response = await requestWithArgs(
     context.userConfig,
     API_ROUTES.submitPullRequests,

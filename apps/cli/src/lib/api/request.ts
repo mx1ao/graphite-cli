@@ -19,6 +19,15 @@ export function requestWithArgs<TActualRoute extends TRoute>(
 > {
   const auth = userConfig.getAuthToken();
 
+  // eslint-disable-next-line no-console
+  console.log(
+    // userConfig.getApiServerUrl(),
+    route.params?.p
+    // params.toString,
+    // queryParams,
+    // urlParams,
+    // auth
+  );
   return request.requestWithArgs(
     userConfig.getApiServerUrl(),
     route,
